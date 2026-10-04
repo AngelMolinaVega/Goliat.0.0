@@ -14,20 +14,21 @@ $mis_listas = $conexion->query("SELECT * FROM wh40k_listas WHERE usuario_id = $u
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goliat</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+<div class="header-bar">
     <h1>Goliat</h1>
-
-    <p>
+    <p class="user-info">
         Hola, <?php echo $_SESSION['nombre_usuario']; ?>
         | <a href="../logout.php">Cerrar sesión</a>
-    <p><a href="../index.php">&laquo; Volver</a></p>
     </p>
-
-    <p><a href="elegir_faccion.php">+ Crear lista</a></p>
-
+</div>
+<p><a href="../index.php">&laquo; Volver</a></p>
+<p><a href="elegir_faccion.php">+ Crear lista</a></p>
+<p><a href="rol/index.php">Rol / Campañas</a></p>
 <h2>Tus listas</h2>
 <?php if ($mis_listas->num_rows > 0): ?>
     <table border="1">

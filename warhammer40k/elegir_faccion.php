@@ -14,6 +14,7 @@ $resultado = $conexion->query("SELECT DISTINCT faccion FROM unidades ORDER BY fa
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegir Facción - Goliat</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>

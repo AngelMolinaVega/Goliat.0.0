@@ -10,17 +10,18 @@ if (!isset($_SESSION['usuario_id'])) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goliat</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <div class="header-bar">
     <h1>Goliat</h1>
-
-    <p>
+    <p class="user-info">
         Hola, <?php echo $_SESSION['nombre_usuario']; ?>
         | <a href="logout.php">Cerrar sesión</a>
     </p>
-
+  </div>
     <h2>Elige un juego</h2>
 
     <ul>
